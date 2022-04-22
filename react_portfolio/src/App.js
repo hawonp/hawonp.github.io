@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 // font imports
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -8,22 +8,29 @@ import "@fontsource/roboto/700.css";
 
 // react imports
 import * as React from "react";
-import ReactDOM from "react-dom";
-import Button from "@mui/material/Button";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // react components
-import Car from "./components/Car";
-import Hawon from "./components/Hawon";
+import AppLayout from "./components/layout/AppLayout";
+import Blank from "./pages/Blank";
+import AboutMe from "./pages/AboutMe";
+
+// MUI imports
+// import Button from "@mui/material/Button";
 
 function App() {
   return (
-    <div className="App">
-      <h1>this is h1 heading</h1>
-      <h2> this is h2 heading</h2>
-      <Button variant="contained">Hello World</Button>
-      <Car />
-      <Hawon />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AppLayout />}>
+          <Route index element={<AboutMe />} />
+          <Route path="/portfolio" element={<Blank />} />
+          <Route path="/experience" element={<Blank />} />
+          <Route path="/contact_me" element={<Blank />} />
+          {/* <Route path="/order" element={<Blank />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
