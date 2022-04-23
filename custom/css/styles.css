@@ -1,15 +1,124 @@
-.container {
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.avatar {
+  /* Rounded border */
+  border-radius: 50%;
+  /* height: 350px;
+  width: 350px; */
+  height: 20vh;
+  width: fit-content;
+  margin: auto;
+  display: block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar__image {
+  /* Rounded border */
+  border-radius: 100%;
+
+  /* Take full size */
+  height: 100%;
+  width: 100%;
+
+  margin: auto;
+  display: block;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.custom_center {
+  /* width: 20%; */
+  width: fit-content;
+  width: fit-content;
+  block-size: fit-content;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+.custom_margin {
+  margin-top: 10em;
+  margin-bottom: 10em;
+  width: 850px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom_subheader {
+  border-bottom-style: solid;
+  /* border-bottom: 10em; */
+  border-color: black;
+  margin-bottom: 1em;
+}
+
+.custom_container {
+  /* Used to position the left vertical line */
+  position: relative;
+}
+
+.custom_container__line {
+  /* Border */
+  border-right: 2px solid black;
+
+  /* Positioned at the left */
+  left: 16px;
+  position: absolute;
+  top: 0px;
+
+  /* Take full height */
+  height: 100%;
+}
+
+.custom_container__items {
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.custom_container__item {
+  margin-bottom: 8px;
+}
+
+.custom_container__top {
+  /* Center the content horizontally */
+  align-items: center;
   display: flex;
 }
 
-.container__sidebar {
-  width: 30%;
+.custom_container__circle {
+  /* Rounded border */
+  background-color: rgb(170, 170, 170);
+  border-radius: 9999px;
+
+  /* Size */
+  height: 32px;
+  width: 32px;
 }
 
-.container__main {
-  /* Take the remaining width */
+.custom_container__title {
+  /* Take available width */
   flex: 1;
+}
 
-  /* Make it scrollable */
-  overflow: auto;
+.custom_container__desc {
+  /* Make it align with the title */
+  margin-left: 48px;
 }
