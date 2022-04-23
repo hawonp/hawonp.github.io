@@ -54,11 +54,12 @@ header {
 .custom_margin {
   margin-top: 10em;
   margin-bottom: 10em;
-  width: 850px;
+  width: 75%;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 10%;
 }
 
 .custom_subheader {
@@ -68,57 +69,8 @@ html {
   margin-bottom: 1em;
 }
 
-.custom_container {
-  /* Used to position the left vertical line */
-  position: relative;
-}
-
-.custom_container__line {
-  /* Border */
-  border-right: 2px solid black;
-
-  /* Positioned at the left */
-  left: 16px;
-  position: absolute;
-  top: 0px;
-
-  /* Take full height */
-  height: 100%;
-}
-
-.custom_container__items {
-  /* Reset styles */
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.custom_container__item {
-  margin-bottom: 8px;
-}
-
-.custom_container__top {
-  /* Center the content horizontally */
-  align-items: center;
-  display: flex;
-}
-
-.custom_container__circle {
-  /* Rounded border */
-  background-color: rgb(170, 170, 170);
-  border-radius: 9999px;
-
-  /* Size */
-  height: 32px;
-  width: 32px;
-}
-
-.custom_container__title {
-  /* Take available width */
-  flex: 1;
-}
-
-.custom_container__desc {
-  /* Make it align with the title */
-  margin-left: 48px;
+.affix {
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
