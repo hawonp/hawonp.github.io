@@ -15,6 +15,10 @@ $(document).ready(function () {
     activeNavItem.removeClass("active");
     $(this).addClass("active");
   });
+
+  $(".navbar-collapse a").click(function () {
+    $(".navbar-collapse").collapse("hide");
+  });
 });
 function openNewTab(link) {
   window.open(link, "_blank");

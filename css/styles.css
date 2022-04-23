@@ -51,12 +51,6 @@ header {
   margin: auto;
 }
 
-.custom_margin {
-  margin-top: 10em;
-  margin-bottom: 10em;
-  width: 75%;
-}
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 10%;
