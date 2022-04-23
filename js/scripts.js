@@ -15,12 +15,6 @@ $(document).ready(function () {
     activeNavItem.removeClass("active");
     $(this).addClass("active");
   });
-
-  $("#see_more_btn").addEventListener("click", function () {
-    // var activeNavItem = $(".nav-item");
-    // activeNavItem.removeClass("active");
-    // $("#about_me").addClass("active");
-  });
 });
 function openNewTab(link) {
   window.open(link, "_blank");
