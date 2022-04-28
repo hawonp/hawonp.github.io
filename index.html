@@ -8,6 +8,11 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <meta property="og:title" content="Hawon Park" />
+    <meta property="og:description" content="An anspiring software engineer" />
+
+    <!-- <meta property="og:image" content="https://link.to/image.png" /> -->
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -59,7 +64,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
@@ -68,11 +73,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li> -->
           </ul>
         </div>
@@ -86,8 +91,12 @@
           <img class="avatar__image" src="./assets/profile.jpg" />
         </div>
         <div>
-          <p class="text-center text-dark display-1">Hawon Park</p>
-          <p class="text-center text-muted" style="font-size: x-large">
+          <p class="text-center text-dark display-1 mb-0">Hawon Park</p>
+          <p
+            id="random_text"
+            class="text-center text-muted mb-3"
+            style="font-size: x-large"
+          >
             a software engineer
           </p>
         </div>
@@ -100,7 +109,7 @@
             onclick='openNewTab("https://github.com/hawonp/")'
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
-            title="See my GitHub profile!"
+            title="see my gitHub profile"
           >
             <i class="fa-brands fa-github"></i>
           </button>
@@ -110,7 +119,7 @@
             onclick='openNewTab("https://www.linkedin.com/in/hawonpark/")'
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
-            title="See my Linkedin profile!"
+            title="see my linkedin profile"
           >
             <i class="fa-brands fa-linkedin-in"></i>
           </button>
@@ -121,26 +130,15 @@
             onclick='openNewTab("./assets/Resume_HawonPark.pdf")'
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
-            title="Download my resume!"
+            title="download my resume"
           >
-            <i class="fa-solid fa-file"></i>
+            <i class="fa-solid fa-file-lines"></i>
           </button>
-
-          <!-- <button
-            type="button"
-            class="btn btn-outline-info mx-1 btn-lg"
-            onclick='openNewTab("https://www.linkedin.com/in/hawonpark/")'
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="Send me an email!"
-          >
-            <i class="fa-solid fa-envelope"></i>
-          </button> -->
         </div>
       </div>
     </header>
 
-    <div id="about_me" class="container-md">
+    <div id="about_me" class="container-md pb-5">
       <div class="custom_subheader">
         <p class="text-left h2">About Me</p>
       </div>
@@ -151,9 +149,21 @@
           </p>
 
           <p style="font-size: large">
-            Hello! My name is Hawon Park and I am a Computer Science major at
-            Stony Brook University. I enjoy learning new things and meeting new
-            people!
+            Hello! My name is Hawon Park and I am a Computer Science student at
+            Stony Brook University. My journey started with AP Computer Science
+            and has led to where I am now. These past four years, in particular,
+            have taught me greatly, and I am excited to see how I can apply that
+            knowledge in industry.
+
+            <br />
+            <br />
+            I am currently working on
+            <a
+              href="https://github.com/ethereumbook/ethereumbook"
+              target="_blank"
+              >Mastering Ethereum</a
+            >
+            for my own personal project.
           </p>
         </div>
         <div class="col">
@@ -165,7 +175,7 @@
               <p class="text-left" style="font-weight: bold">Email:</p>
             </div>
             <div class="col-sm-8 text-left">
-              <p class="text-left">hawon.prk@gmail.com</p>
+              <p class="text-left">hawonpark3@gmail.com</p>
             </div>
           </div>
           <div class="row">
@@ -183,13 +193,36 @@
             </div>
             <div class="col-sm-8 text-left">
               <p class="text-left m-0">Stony Brook Unversity</p>
-              <p class="text-left m-0">Bachelor of Science, Computer Science</p>
+              <p class="text-left mb-1">
+                Bachelor of Science, Computer Science
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-sm-4">
+              <p class="text-left" style="font-weight: bold">
+                Computer Languages:
+              </p>
+            </div>
+            <div class="col-sm-8 text-left">
+              <p class="text-left">Java, JS, Python, C</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <p class="text-left" style="font-weight: bold">Frameworks:</p>
+            </div>
+            <div class="col-sm-8 text-left">
+              <p class="text-left">
+                MariaDB, Firebase, Django, Docker, Flask, FastAPI
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="experience" class="container-md">
+    <div id="experience" class="container-md pb-5">
       <div class="custom_subheader">
         <p class="text-left h2">Work Experience</p>
       </div>
@@ -205,11 +238,11 @@
           <h6 class="card-subtitle mb-2 text-muted">Sept 2021 ~ Present</h6>
 
           <p class="card-text">
-            Currently developing an Android application that uses AR and ArUco
+            - Currently developing an Android application that uses AR and ArUco
             markers to detect full containers on factory racks
           </p>
           <p class="card-text">
-            Created an Android application that tracks and logs a user’s GPS
+            - Created an Android application that tracks and logs a user’s GPS
             location with an accuracy of 5 meters
           </p>
         </div>
@@ -226,11 +259,11 @@
           <h6 class="card-subtitle mb-2 text-muted">May 2021 ~ July 2021</h6>
 
           <p class="card-text">
-            Built an internal platform that aggregates cryptocurrency data in
+            - Built an internal platform that aggregates cryptocurrency data in
             real time from the Bitthumb, Binance, Upbit and Coinone exchanges
           </p>
           <p class="card-text">
-            Implemented search engine optimization for FD Holding’s O2 Pilates
+            - Implemented search engine optimization for FD Holding’s O2 Pilates
             platform on Google / Naver
           </p>
         </div>
@@ -247,8 +280,8 @@
           <h6 class="card-subtitle mb-2 text-muted">April 2021 ~ May 2021</h6>
 
           <p class="card-text">
-            Automated Zoom Meeting scheduling between 27 startups and 10 mentors
-            for the 2021 v-ETHOS program via Zoom API
+            - Automated Zoom Meeting scheduling between 27 startups and 10
+            mentors for the 2021 v-ETHOS program via Zoom API
           </p>
         </div>
       </div>
@@ -266,8 +299,8 @@
           </h6>
 
           <p class="card-text">
-            Maintained a closed military network with 99% uptime using automated
-            unit tests and daily backups
+            - Maintained a closed military network with 99% uptime using
+            automated unit tests and daily backups
           </p>
         </div>
       </div>
@@ -285,11 +318,11 @@
           </h6>
 
           <p class="card-text">
-            Developed a language corpus focused on Korean patent documents by
+            - Developed a language corpus focused on Korean patent documents by
             analyzing over 200 existing documents
           </p>
           <p class="card-text">
-            Adjusted Google’s SyntaxNet for semantic analysis of Korean patent
+            - Adjusted Google’s SyntaxNet for semantic analysis of Korean patent
             documents with 94% accuracy
           </p>
         </div>
@@ -321,67 +354,50 @@
       <!-- timeline item end -->
 
       <!-- timeline ends here -->
-    <!-- </div>
-    <div id="projects" class="container-md">
+    </div>
+    <div id="projects" class="container-md pb-5">
       <div class="custom_subheader">
         <p class="text-left h2">Featured Projects</p>
       </div>
 
-      <div class="row">
-
-        <div class="col">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-4">
           <div class="card">
+            <!-- <img
+              src="https://via.placeholder.com/50"
+              class="card-img-top"
+              alt="..."
+            /> -->
             <div class="card-body">
               <h5 class="card-title">RASCL Compiler</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                Term Project for SBU's Compiler Design Course
-              </h6>
+              <h6 class="card-subtitle mb-2 text-muted">Java</h6>
               <p class="card-text">
                 A partial implementation of a compiler for a small subset of C.
                 Takes RASCL code as input and outputs intermediate code
                 (Three-Address-Code)
               </p>
+              <a
+                href="https://github.com/hawonp/RASCL-Compiler"
+                class="card-link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i> Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">StudyBoard</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                ReactJS / Flask / MariaDB
+              </h6>
+              <p class="card-text">A community website where students are</p>
               <p class="card-text"></p>
               <a
-                href="https://github.com/hawonp/RASCL-Compiler"
-                class="card-link"
-                target="_blank"
-              >
-                <i class="fa-brands fa-github"></i> Github</a
-              >
-            </div>
-          </div>
-        </div>
-   
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">RASCL Compiler</h5>
-              <p class="card-text">
-                Partial implementation of a compiler (until intermediate code
-                generation) for a small subset of C
-              </p>
-              <a
-                href="https://github.com/hawonp/RASCL-Compiler"
-                class="card-link"
-                target="_blank"
-              >
-                <i class="fa-brands fa-github"></i> Github</a
-              >
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">RASCL Compiler</h5>
-              <p class="card-text">
-                Partial implementation of a compiler (until intermediate code
-                generation) for a small subset of C
-              </p>
-              <a
-                href="https://github.com/hawonp/RASCL-Compiler"
+                href="https://github.com/hawonp/StudyBoard"
                 class="card-link"
                 target="_blank"
               >
@@ -391,12 +407,80 @@
           </div>
         </div>
 
+        <div class="col col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BlackJack-101</h5>
+              <h6 class="card-subtitle mb-2 text-muted">YoloV3, Scikit</h6>
+              <p class="card-text">A community website where students are</p>
+              <p class="card-text"></p>
+              <a
+                href="https://github.com/hawonp/Blackjack-101"
+                class="card-link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i> Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- end of row -->
       </div>
-    </div> -->
+    </div>
 
-    <!-- <div id="skills" class="container-md">
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3">© 2022 Copyright: Hawon Park</div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- <div id="contact" class="container-md pb-5">
       <div class="custom_subheader">
-        <p class="text-left h2">Technical Skills</p>
+        <p class="text-left h2">Contact Me</p>
+      </div>
+      <form role="form" method="post" id="contact_form" class="row g-3 w-50">
+        <div class="col-12">
+          <label for="input_email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="input_email" required />
+        </div>
+        <div class="col-12">
+          <label for="input_subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="input_subject" required />
+        </div>
+        <div class="col-12">
+          <label for="input_message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="input_message"
+            rows="3 "
+            placeholder="Craft your message here!"
+            maxlength="6000"
+            required
+          ></textarea>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              I want to send this email
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+      <div
+        id="success_message"
+        style="width: 100%; height: 100%; display: none"
+      >
+        <h3>Posted your message successfully!</h3>
+      </div>
+      <div id="error_message" style="width: 100%; height: 100%; display: none">
+        <h3>Error</h3>
+        Sorry there was an error sending your form.
       </div>
     </div> -->
 

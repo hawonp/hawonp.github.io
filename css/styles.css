@@ -53,7 +53,7 @@ header {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 10%;
+  scroll-padding-top: 15%;
 }
 
 .custom_subheader {
@@ -61,10 +61,4 @@ html {
   /* border-bottom: 10em; */
   border-color: black;
   margin-bottom: 1em;
-}
-
-.affix {
-  width: 100%;
-  top: 0;
-  z-index: 10;
 }
